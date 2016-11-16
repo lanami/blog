@@ -1,0 +1,67 @@
+#about {
+    .portrait {
+        float: right;
+        height: 100%;
+        width: 40%;
+        background: url(/img/profile.jpg) no-repeat scroll center center;
+        background-size: cover;
+        position: relative;
+
+        .frame {
+            height: 94%;
+            margin: 3% 2%;
+            position: relative;
+            width: 96%;
+            .border {
+                height: 100%;
+                left: 0;
+                position: absolute;
+                top: 0;
+                width: 100%;
+
+                &:before, &:after {
+                    background-color: #000;
+                    content: "";
+                    position: absolute;
+                    opacity: .1;
+                }
+
+                &.top-left:before {
+                    height: 100%;
+                    left: 15px;
+                    top: 0;
+                    width: 1px;
+                }
+                &.top-left:after {
+                    height: 1px;
+                    left: 0;
+                    top: 14px;
+                    width: 100%;
+                }
+
+                &.bottom-right:before {
+                    height: 100%;
+                    right: 15px;
+                    top: 0;
+                    width: 1px;
+                }
+
+                &.bottom-right:after {
+                    height: 1px;
+                    left: 0;
+                    bottom: 14px;
+                    width: 100%;
+                }
+            }
+        }
+    }
+    .content {
+        float: left;
+        width: 60%;
+        height: 100%;
+        position: relative;
+        overflow: hidden;
+        background: #092135;
+    }
+
+}
