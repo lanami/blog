@@ -2,13 +2,14 @@
 layout: default
 ---
 <article id="about">
-    <div class="portrait">
+    <div class="block right portrait">
         <div class="frame">
             <span class="border top-left"></span>
             <span class="border bottom-right"></span>
         </div>
     </div>
-    <div class="content">
+    <div class="block left content">
         {{content}}
+        {% include social.html %}
     </div>        
 </article>
