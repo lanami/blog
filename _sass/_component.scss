@@ -1,6 +1,7 @@
 .social-icons { 
     font-size: 0;
     text-align: center;
+    margin-top: 60px;
     
     a {
         width: 40px;
@@ -85,6 +86,20 @@
                 bottom: 14px;
                 width: 100%;
             }
+        }
+    }
+}
+
+.action-buttons {
+    text-align: center;
+    
+    .btn {
+        font-weight: 300;
+        font-size: 12px;
+        text-transform: uppercase;
+
+        i {
+            margin-right: 10px;
         }
     }
 }

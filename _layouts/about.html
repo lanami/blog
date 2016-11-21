@@ -9,7 +9,24 @@ layout: default
         </div>
     </div>
     <div class="block left content">
-        {{content}}
-        {% include social.html %}
+        <div class="page-centred-wrapper">
+            <div class="page-centred-container">
+                <div class="page-centred-content">
+                    <h2 class="fade-title">
+                        {{page.fade}}
+                    </h2>
+                    <h1 class="title">
+                        {{page.title}}
+                    </h1>
+                    <h2 class="sub-title">
+                        {{page.sub}}
+                    </h2>
+                    <p>
+                        {{content}}
+                    </p>
+                    {% include social.html %}
+                </div>
+            </div>
+        </div>
     </div>        
 </article>
