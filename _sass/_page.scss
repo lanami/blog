@@ -1,7 +1,12 @@
 #about {
+    .portrait {
+        min-height: 450px;
+    }
     .content {
-        background: #092135;
-        color: #fff;
+        div:first-child {
+            position: relative;
+            margin: 100px 0;
+        }
 
         h1, h2, h3 {
             margin: 10px 0;
@@ -17,22 +22,18 @@
             left: 90px;
             line-height: 140px;
             position: absolute;
-            text-transform: uppercase;
-            top: -115px;
-            z-index: -1;
+            top: -90px;
+            z-index: 0;
         }
 
         .title {
-            color: #f1ab3d;
             font-size: 55px;
             line-height: 55px;
-            text-transform: uppercase;
         }
 
         .sub-title {
             color: #fff;
             font-size: 16px;
-            text-transform: uppercase;
         }
     }
 }

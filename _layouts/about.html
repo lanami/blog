@@ -1,32 +1,28 @@
 ---
 layout: default
 ---
-<article id="about">
-    <div class="block right portrait">
+<article id="about" class="row">
+    <div class="block right portrait col-sm-4 col-sm-push-8">
         <div class="frame">
             <span class="border top-left"></span>
             <span class="border bottom-right"></span>
         </div>
     </div>
-    <div class="block left content">
-        <div class="page-centred-wrapper">
-            <div class="page-centred-container">
-                <div class="page-centred-content">
-                    <h2 class="fade-title">
-                        {{page.fade}}
-                    </h2>
-                    <h1 class="title">
-                        {{page.title}}
-                    </h1>
-                    <h2 class="sub-title">
-                        {{page.sub}}
-                    </h2>
-                    <p>
-                        {{content}}
-                    </p>
-                    {% include social.html %}
-                </div>
-            </div>
+    <div class="block left content col-sm-8 col-sm-pull-4">
+        <div>
+            <h2 class="fade-title">
+                {{page.fade}}
+            </h2>
+            <h1 class="title">
+                {{page.title}}
+            </h1>
+            <h2 class="sub-title">
+                {{page.sub}}
+            </h2>
+            <p>
+                {{content}}
+            </p>
+            {% include social.html %}  
         </div>
-    </div>        
+    </div>      
 </article>

@@ -1,5 +1,6 @@
 ---
 layout: about
+class: single-page
 fade: "Hi I'm"
 title: "Lana Milanovich"
 sub: "an engineering manager from Seattle"
