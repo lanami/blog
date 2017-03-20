@@ -21,5 +21,5 @@ group :jekyll_plugins do
     gem "jekyll-paginate"
     gem "jekyll-sitemap"
     gem "octopress-autoprefixer"
-    gem "rdiscount"
+    gem "jekyll-polyglot"
 end

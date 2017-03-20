@@ -1,15 +1,25 @@
+---
+hero: true
+---
 <!DOCTYPE html>
 <html>
 
   {% include head.html %}
 
-  <body class="{% if page.class %}{{ page.class }}{% endif %}">
-    <div class="container-fluid">
-        <main>
-        {{ content }}
-        </main>
+  <body class="{% if page.class %}{{ page.class }}{% endif %}{% if layout.hero == false %} no-hero {% endif %}">
+    
+    {% include header.html %}
+    
+    <main>
+        <div class="container">
+            {{ content }}
+        </div>
+    </main>
 
-        {% include footer.html %}
-    </div>
+    {% include footer.html %}
+  
   </body>
 
+  {% include scripts.html %}
+
+</html>

@@ -1,22 +1,109 @@
-@import url('https://fonts.googleapis.com/css?family=Lato:300,400');
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300i,700|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i|Nothing+You+Could+Do');
 
-html, body, main, .container-fluid {
-    height: 100%;
+$base: #333;
+$primary: rgb(139, 195, 75);
+$accent: #e0f3fa;
+$faded: #ccc;
+
+$text: 'Open Sans', sans-serif;
+$header: 'Open Sans', sans-serif;
+
+header {
+    a {
+        border: none;
+    }
 }
 
 body {
-    font-family: 'Lato', sans-serif;
+    font-family: $text;
+    margin: 0;
+    padding: 0;
     font-size: 16px;
-    line-height: 23px;
+    line-height: 1.6em;
     font-weight: 300;
-    background: #092135;
-    color: #fff;
+}
+
+::selection {
+    background-color: $accent;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
+    font-family: $header;
+    font-weight: 400;
     text-transform: uppercase;
-    color: #f1ab3d;
+    color: $primary;
+    text-align: center;
+    margin-top: 2em;
+    margin-bottom: 0.5em;
+
+    &.last {
+        text-align: left;
+    }
+}
+
+h1 {
+    font-size: 1.6em;
+}
+
+h2 {
+    font-size: 1.3em;
+}
+
+h3, h4 {
+    color: $faded;
+    font-size: 1.1em;
+    text-align: left;
+}
+
+h5, h6 {
+    color: $faded;
+    font-size: 0.9em;
+    font-weight: 100;
+    text-align: right;
+}
+
+a {
+    color: $base;
+    border-bottom: 4px solid $primary;
+}
+
+p {
+    margin: 1.6em 0;
+    text-align: justify;
+}
+
+time {
+    color: $faded;
+}
+
+h1 + time {
+    font-weight: 100;
+    font-size: 0.9em;
+    display: block;
+    text-align: center; 
+}
+
+article {
+    ul {
+        margin: 1.6em 0;
+        padding: 0 0 0 30px;
+        list-style-type: none;
+        text-align: justify;
+
+        > li {
+            &:before {
+                content: '\2014';
+                position: absolute;
+                margin-left: -30px;
+            }
+        }
+    }
+}
+
+footer {
+    margin-bottom: 2em;
+}
+
+.en:lang(en), .fr:lang(fr), .zh:lang(zh){
+    font-weight: bold;
 }

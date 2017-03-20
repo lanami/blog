@@ -1,0 +1,12 @@
+<header>
+    <div class="bar">
+        <div class="container">
+            <a href="/" class="logo">Lana Milanovich</a>
+            {% include nav.html %}
+        </div>
+    </div>
+
+    {% if layout.hero %}
+    	<div class="hero" style="background-image: url('{% if page.hero %}{{page.hero}}{% else %}/img/bg.jpg{% endif %}');"></div>
+    {% endif %}
+</header>  
