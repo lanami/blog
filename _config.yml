@@ -20,4 +20,4 @@ gems:
   - octopress-autoprefixer
 
 markdown: kramdown
-exclude: ['_screenshots', '.gitignore', 'Gemfile', 'Gemfile.lock', 'LICENSE.txt', 'README.md', s3_website.yml]
+exclude: ['vendor', '.gitignore', 'Gemfile', 'Gemfile.lock', 'LICENSE.txt', 'README.md', s3_website.yml]
