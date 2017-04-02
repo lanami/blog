@@ -13,9 +13,11 @@ url: ''
 baseurl: ''
 google_analytics: ''
 permalink: pretty
-paginate: 5
 
 # Build
-gems: ['octopress-autoprefixer', 'jekyll-paginate']
+gems:
+  - jekyll-feed
+  - octopress-autoprefixer
+
 markdown: kramdown
-exclude: ['_screenshots', '.gitignore', 'Gemfile', 'Gemfile.lock', 'LICENSE.txt', 'README.md']
+exclude: ['_screenshots', '.gitignore', 'Gemfile', 'Gemfile.lock', 'LICENSE.txt', 'README.md', s3_website.yml]
